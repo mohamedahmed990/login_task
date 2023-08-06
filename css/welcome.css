@@ -1,0 +1,66 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.bg-main {
+    background-color: #24353F;
+}
+
+nav div {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0px auto;
+}
+
+h1 {
+    font-size:20px;
+    font-family: 'Titillium Web', sans-serif;
+}
+button{
+    padding: 8px 8px;
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+    color:#FFFFFFBF ;
+    border: 1px solid #FFC107;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+button:hover{
+    background-color: #FFC107;
+    color:white;
+    cursor: pointer;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 10px 0px;
+}
+
+.message-container {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #17A2B8;
+    padding: 50px 150px;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.message-container,
+nav {
+    box-shadow: 3px 3px 80px black;
+}
