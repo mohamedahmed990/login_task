@@ -8,8 +8,6 @@ let signUpError = document.querySelector(".sign-up-error");
 let signUpBtn = document.querySelector("#sign-up-btn");
 
 let users = [];
-
-
 function loadData(){
     if(localStorage.getItem("users")!==null){
         users=JSON.parse(localStorage.getItem("users"));
@@ -75,10 +73,6 @@ signUpBtn.addEventListener("click", function () {
         signUpError.innerHTML="password must be 5 characters long";
         return;
     }
-    
-    
-    
-
     let user = {
         name: signUpName.value,
         email: signUpEmail.value,
@@ -89,6 +83,6 @@ signUpBtn.addEventListener("click", function () {
     users.push(user);
     resetInputs();
     localStorage.setItem("users",JSON.stringify(users));
-    window.location.href = "signIn.html";
+    window.location.href = "html/signIn.html";
 });
 
